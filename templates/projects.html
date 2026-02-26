@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <style>
+    table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #eee; }
+  </style>
+</head>
+<body>
+<h2 style="text-align:center;">Projects</h2>
+<table>
+<tr>
+<th>UserID</th><th>ProjectID</th><th>CreatedAt</th><th>UpdatedAt</th><th>ProjectName</th>
+</tr>
+{{range .}}
+<tr>
+<td>{{.UserID}}</td>
+<td>{{.ProjectID}}</td>
+<td>{{.CreatedAt}}</td>
+<td>{{.UpdatedAt}}</td>
+<td>{{.ProjectName}}</td>
+</tr>
+{{end}}
+</table>
+</body>
+</html>
